@@ -1,7 +1,16 @@
 .button{
-	margin: 350px;
-	text-align: center;
+	position: relative;
+	height: 200px;
+    border: 3px;
+}
 
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 body {
@@ -17,5 +26,21 @@ body {
     font-size: 50px;
     text-align: center;
     top: -500;
+}
+
+.topContainer {
+    padding: 20px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.paneTitle {
+    display:inline-block;
+    width:50%;
+}
+
+.riskRating {
+    display:inline-block;
+    text-align:right;
+    width:50%;
 }
 
