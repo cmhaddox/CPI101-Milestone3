@@ -37,7 +37,7 @@ function riskRating() {
 
 }
 
-/*function riskRating2() {
+function riskRating2() {
     var rand = Math.floor(Math.random() * 101);
 
     if(rand >= 0 && rand < 10) {
@@ -72,5 +72,5 @@ function riskRating() {
         document.getElementById('rating').style.color = "#990000";
     }
 
-}*/
+}
 
