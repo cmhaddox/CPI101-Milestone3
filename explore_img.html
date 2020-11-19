@@ -15,6 +15,7 @@
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
         <!-- For the custom template -->
         <link rel="stylesheet" href="ar_temp.css" />
+        <link rel="stylesheet" href="style.css" />
         <script src="utils.js"></script>
         <script src="explore_img.js"></script>
     </head>
@@ -29,8 +30,10 @@
         </div>
         <div id="nft-marker2-info" class="info-pane">
             <h1>Hayden Library</h1>
-            <h3>Risk Rating: </h3>
+            <h3 style="display:inline;">Risk Rating: </h3><h3 id="rating2" style="display:inline;"><script>riskRating()</script></h3>
         </div>
+        
+
         
 
         <!-- Fill in the content ABOVE this line -->
@@ -54,5 +57,5 @@
             <a-entity camera rotation-reader></a-entity> 
 
         </a-scene>
-    </body>
+    </body>a
 </html>
