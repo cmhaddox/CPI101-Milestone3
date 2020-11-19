@@ -55,6 +55,35 @@
                 }]
             });
             chart.render();
+
+            var chart = new CanvasJS.Chart("chartContainer2", {
+                animationEnabled: true,
+                theme: "light2",
+                title:{
+                    text: "Peak Hours"
+                },
+                axisY: {
+                    title: "Foot Traffic(people)"
+                },
+                data: [{        
+                    type: "column",  
+                    color: "lightsteelblue",
+                    dataPoints: [      
+                        { y: 3000, label: "8:00am" },
+                        { y: 4500,  label: "9:00am" },
+                        { y: 6500,  label: "10:00am" },
+                        { y: 9000,  label: "11:00am" },
+                        { y: 12000,  label: "12:00pm" },
+                        { y: 11500, label: "1:00pm" },
+                        { y: 13000,  label: "2:00pm" },
+                        { y: 14500,  label: "3:00pm" },
+                        { y: 10000, label: "4:00pm" },
+                        { y: 8500, label: "5:00pm"},
+                        { y: 8000, label: "6:00pm"},
+                    ]
+                }]
+            });
+            chart.render();
             
             }
         </script>
@@ -96,7 +125,7 @@
                     <span class="badge bg-dark"><h3 style="display:inline;">Risk Rating: </h3><h3 id="rating2" style="display:inline;"><script>riskRating2();</script></h3></span>
                 </div>
             </div>
-            <div id="chartContainer" style="height: 150px; width: 100%;"></div>
+            <div id="chartContainer2" style="height: 150px; width: 100%;"></div>
             <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
             <div class="topContainer">
                 <div class="maskRequired">
